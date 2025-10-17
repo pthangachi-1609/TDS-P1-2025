@@ -137,10 +137,6 @@ For questions, raise an issue or contact the author.
 ***
 
 **Ready to run on Hugging Face Spaces or in Docker!**
-<span style="display:none">[^1]</span>
 
-<div align="center">⁂</div>
-
-[^1]: paste.txt
 
 
