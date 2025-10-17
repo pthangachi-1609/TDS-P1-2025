@@ -1,0 +1,5 @@
+flask
+requests
+PyGithub
+jinja2
+google-genai
