@@ -370,7 +370,9 @@ def generate_code(brief, app_code, attachments=None, round_num=1, checks=None, o
             "11. Do NOT display the words 'static export', 'exported', '--export', 'development mode', or other workflow/internal process keywords anywhere on the rendered pages, headings, or user-facing site text.\n"
             "12. All visible content must reflect only the required outputs, features, data, and UX as described in the BRIEF and functional checks. Hide all implementation details from users.\n"
             "13. - During '--export' mode, always wrap all template rendering (render_template, render_template_string) in 'with app.app_context():' \n"
-            "14. **Important** : Strictly use the brief/checks to define all visible content, features, and UX.\n\n"
+            "14. All Jinja template expressions must use only valid Jinja2 syntax—never put colons (:) inside {{ ... }}. For default values, use {{ var or 'default' }} instead of {{ var:default }}.\n"
+            "15. Ensure all template files render without any Jinja TemplateSyntaxError in Flask.\n"
+            "16. **Important** : Strictly use the brief/checks to define all visible content, features, and UX.\n\n"
             "--- OUTPUT REQUIREMENT ---\n"
             "Output ONLY the full code for app.py—no markdown, code fences, sample input/output, or explanations. All code must be fully runnable and free of syntax/indentation errors."
         )
